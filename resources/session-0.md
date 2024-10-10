@@ -54,6 +54,7 @@ int main()
 
 ```
 
+** To know more about iostream visite the link below** <br>
 Reference: https://cplusplus.com/reference/iostream/
 
 
@@ -109,7 +110,7 @@ int main()
 }
 ```
 
-To know more about `std::array` click the link below
+**To know more about `std::array` visite the link below** <br>
 Reference: https://en.cppreference.com/w/cpp/container/array
 
 
