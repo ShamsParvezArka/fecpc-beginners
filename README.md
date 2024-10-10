@@ -1,6 +1,9 @@
-# Hello World
+<h1 align="center">
+	Beginners Handbook
+</h1>
 
-This repo is specially designed for FECPC beginners.
+This wiki is specially designed for FECPC beginners. Every session summary is being dumped here.
+Outsiders may find this helpful. If so, let's make this world a better palce. **~ Peace Nerds ✌️** 
 
 ## Table of content
 - session 0 :: [Getting started](resources/session-0.md)
