@@ -193,4 +193,4 @@ int is_even(int &n)
     return ((n & 1) == 1) ? 0 : 1;
 }
 ```
-**n.b** _make sure to wrap `n & 1` with parentheses like this `(n & 1)` __ Because comparison operator has a higher precedence than bitwise operator
+**n.b** _make sure to wrap `n & 1` with parentheses like this `(n & 1)` Because comparison operator has a higher precedence than bitwise operator_
