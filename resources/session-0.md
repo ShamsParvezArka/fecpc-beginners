@@ -1,8 +1,8 @@
-#### Why C++ not  C
+## Why C++ not  C
 `C++` by default comes with a lot of handy utilities. For example, `std::vector`, `std::unordered_map`, `std::pair` and so on. So, you don't have to waste your precious time reinventing the wheel from scratch in a pivotal moment.
 
 
-#### Primitives
+## Primitives
 | Data type          | Stride  | Range                                                    |
 | ------------------ | ------- | -------------------------------------------------------- |
 | char               | 1 byte  | -128 ... 127                                             |
@@ -17,7 +17,7 @@
 | unsigned long long | 8 bytes | 0 ... 18,446,744,073,709,551,615                         |
 
 
-#### I/O Stream
+## I/O Stream
 `iostream` is `stdio.h` equivalent in C++. Provides basic input, output functionalities
 
 * Taking input
@@ -57,12 +57,12 @@ int main()
 Reference: https://cplusplus.com/reference/iostream/
 
 
-#### `std::` !?
+## `std::` !?
 Whenever we encounter `std::<something>` in out code, then it means that it's a part of standard library. And this standard library utils are `namespaced` under `std`
 
 
 
-#### Array
+## Array
 An Array is a group of similar elements.
 DO I HAVE TO SAY MORE ABOUT ARRAY!? C'mon guys
 
@@ -113,13 +113,13 @@ To know more about `std::array` click the link below
 Reference: https://en.cppreference.com/w/cpp/container/array
 
 
-#### `std::endl` and why not to use
+## `std::endl` and why not to use
 `endl` stands for end-of-line. So what it does is create a new line. But `\n` also does the same job right? Now here's the fact, `std::endl` and `\n` are not the same.
 
 `std::endl` creates a new line and also flushes the new line buffer where `\n`   only creates a new line. So `std::endl` typically takes longer time than `\n`.
 
 
-#### Loops
+## Loops
 Loops are the _black magic_ thing that does the same work over and over again. So far we only know about traditional loops. But there's another kind of loop that exists in `C++` . It's called **range based loop**.
 
 * Traditional loop
@@ -155,11 +155,11 @@ int main()
 ```
 
 
-#### `auto` keyword
+## `auto` keyword
 `auto` detects the desired data-type automatically in compile time. You might be thinking, _"Ow what a cool feature, maybe I should use this quite often!"_. **NO!** Don't use auto like that. It is created to resolve some special cases. Otherwise your codebase will turn into a dumpster fire.
 
 
-#### Passing reference with `&`
+## Passing reference with `&`
 `&` is the C++ standard to pass a value/$fn$/object by reference. Pass by reference solves 2 major problems.
 1. value doesn't get copied overtime.
 2. we can use `this.something` instead of `this->something` and don't have to dereference with `*variable`.
@@ -170,12 +170,12 @@ To know more about `side effects` click the link below
 Reference: https://softwareengineering.stackexchange.com/questions/40297/what-is-a-side-effect
 
 
-#### Conditions
+## Conditions
 
 _This part is intentionally left blank_
 
 
-#### Tricks
+## Tricks
 - Swap two numbers without using a temporary variable.
 ```c++
 void swap(int &a, int &b)
