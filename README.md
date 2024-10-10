@@ -3,28 +3,18 @@
 
 
 #### Primitives
-| Data type          | Stride  | Range
-       |
+| Data type          | Stride  | Range                                                    |
 | ------------------ | ------- | -------------------------------------------------------- |
-| char               | 1 byte  | -128 ... 127
-       |
-| short              | 2 bytes | -32,768 ... 32,767
-       |
-| int                | 4 bytes | -2,147,483,648 ... 2,147,483,647
-       |
+| char               | 1 byte  | -128 ... 127                                             |
+| short              | 2 bytes | -32,768 ... 32,767                                       |
+| int                | 4 bytes | -2,147,483,648 ... 2,147,483,647                         |
 | long long          | 8 bytes | -9,223,372,036,854,775,808 ... 9,223,372,036,854,775,807 |
-| float              | 4 bytes | 3.4E +/- 38
-       |
-| double             | 8 bytes | 1.7E +/- 308
-       |
-| unsigned char      | 1 byte  | 0 ... 255
-       |
-| unsigned short     | 2 bytes | 0 ... 65,535
-       |
-| unsigned int       | 4 bytes | 0 ... 4,294,967,295
-       |
-| unsigned long long | 8 bytes | 0 ... 18,446,744,073,709,551,615
-       |
+| float              | 4 bytes | 3.4E +/- 38                                              |
+| double             | 8 bytes | 1.7E +/- 308                                             |
+| unsigned char      | 1 byte  | 0 ... 255                                                |
+| unsigned short     | 2 bytes | 0 ... 65,535                                             |
+| unsigned int       | 4 bytes | 0 ... 4,294,967,295                                      |
+| unsigned long long | 8 bytes | 0 ... 18,446,744,073,709,551,615                         |
 
 
 #### I/O Stream
