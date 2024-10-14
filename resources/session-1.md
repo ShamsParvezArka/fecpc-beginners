@@ -215,7 +215,7 @@ int main()
 	int N;
 	cin >> N;
 
-	array<int, N> arr;
+	array<int, 6> arr;
 	for (int i = 0; i < N; i++)
 		cin >> arr[i];
 		
@@ -224,13 +224,12 @@ int main()
 	
 	int max = 0;
 	int csum = 0;
-
 	for (int i = 0; i < K; i++)
 		csum += arr[i];
 		
-	for (int i = k; i < N; i++) {
-		csum += arr[k];
-		csum -= arr[i - k];
+	for (int i = K; i < N; i++) {
+		csum += arr[i];
+		csum -= arr[i - K];
 		
 		if (csum > max)
 			max = csum;
