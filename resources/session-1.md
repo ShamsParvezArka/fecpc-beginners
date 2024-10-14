@@ -43,10 +43,12 @@ So what's the solution for this situaltion? The answer is to use `auto`.
 
 - Iterating over an array with `c++ iterators` - **Refined version**
 ```c++
-std::array<int, 5> arr = {3, 1, 4, 1, 5};
+{
+	std::array<int, 5> arr = {3, 1, 4, 1, 5};
 	
-for (auto it = arr.begin(); it != arr.end(); it++)
-	std::cout << *it << endl;
+	for (auto it = arr.begin(); it != arr.end(); it++)
+		std::cout << *it << endl;
+}
 ```
 
 - Some usefull methods: `at()`, `empty()`, `size()`, `fill()`
