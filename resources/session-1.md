@@ -204,7 +204,7 @@ int main()
 Given an $N$ length array of integers, return the max sum of $k$ length contiguous subarray. 
 If there is no such subarray, return 0 instead.
 
-```
+```c++
 #include <iostream>
 #include <array>
 
@@ -224,6 +224,7 @@ int main()
 	
 	int max = 0;
 	int csum = 0;
+
 	for (int i = 0; i < K; i++)
 		csum += arr[i];
 		
