@@ -43,10 +43,12 @@ So what's the solution for this situaltion? The answer is to use `auto`.
 
 - Iterating over an array with `c++ iterators` - **Refined version**
 ```c++
-std::array<int, 5> arr = {3, 1, 4, 1, 5};
+{
+	std::array<int, 5> arr = {3, 1, 4, 1, 5};
 	
-for (auto it = arr.begin(); it != arr.end(); it++)
-	std::cout << *it << endl;
+	for (auto it = arr.begin(); it != arr.end(); it++)
+		std::cout << *it << endl;
+}
 ```
 
 - Some usefull methods: `at()`, `empty()`, `size()`, `fill()`
@@ -202,7 +204,7 @@ int main()
 Given an $N$ length array of integers, return the max sum of $k$ length contiguous subarray. 
 If there is no such subarray, return 0 instead.
 
-```
+```c++
 #include <iostream>
 #include <array>
 
@@ -213,7 +215,7 @@ int main()
 	int N;
 	cin >> N;
 
-	array<int, N> arr;
+	array<int, 6> arr;
 	for (int i = 0; i < N; i++)
 		cin >> arr[i];
 		
@@ -225,9 +227,9 @@ int main()
 	for (int i = 0; i < K; i++)
 		csum += arr[i];
 		
-	for (int i = k; i < N; i++) {
-		csum += arr[k];
-		csum -= arr[i - k];
+	for (int i = K; i < N; i++) {
+		csum += arr[i];
+		csum -= arr[i - K];
 		
 		if (csum > max)
 			max = csum;
